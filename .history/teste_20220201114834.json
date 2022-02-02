@@ -1,0 +1,13 @@
+ // JSON = JAVASCRIPT OBJECT NOTATION
+
+ [{
+     "name" : "Pedro",
+     "age" : 18 ,
+     "nation" : "Brazil"
+
+ },{
+    "name" : "Pedro",
+     "age" : 18 ,
+     "nation" : "Brazil"
+ }
+]
