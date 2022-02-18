@@ -1,12 +1,10 @@
 const express = require("express");
 const uuid = require("uuid"); // gerador de id
-const cors = require("cors");
 
 const port = 3001; // defini a porta em que o server irá rodar
 
 const server = express();
 server.use(express.json());
-server.use(cors());
 
 const users = []; // Nunca fazer isso, porque quando parar a aplicação ,se perdem os dados
 
@@ -50,8 +48,8 @@ server.post("/users", (request, response) => {
     users.push(user); // Adiciona o usuário novo no final do array "users"
 
     return response.status(201).json(user); // retorna erro 201 e o novo usuário
-  } catch(err) {
-    return response.status(500).json({error:"internal server error"});
+  } catch (err) {
+    return response.status(500).json({errorr:"internal server error"});
   }
 });
 

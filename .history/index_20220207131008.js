@@ -1,12 +1,10 @@
 const express = require("express");
 const uuid = require("uuid"); // gerador de id
-const cors = require("cors");
 
 const port = 3001; // defini a porta em que o server irá rodar
 
 const server = express();
 server.use(express.json());
-server.use(cors());
 
 const users = []; // Nunca fazer isso, porque quando parar a aplicação ,se perdem os dados
 
