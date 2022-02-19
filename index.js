@@ -6,7 +6,7 @@ const port = process.env.PORT || 3001;
 
 const server = express();
 server.use(express.json());
-server.use(cors());
+server.use(cors(headers: {"Access-Control-Allow-Origin": "*"} ));
 
 const users = []; 
 
